@@ -20,20 +20,14 @@ public class MainActivity extends AppCompatActivity {
         final EditText edtAngkaKedua = findViewById(R.id.edt2);
         final TextView txtHasil = findViewById(R.id.hasilhitung);
 
+
+
+
         Button btnTambah = findViewById(R.id.btnTambah);
         Button btnBagi = findViewById(R.id.btnBagi);
         Button btnKali = findViewById(R.id.btnKali);
 
 
-        btnKali.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                int angka1 = Integer.parseInt(edtAngkaPertama.getText().toString());
-                int angka2 = Integer.parseInt(edtAngkaKedua.getText().toString());
-                int hasil = angka1 * angka2;
-                txtHasil.setText("Hasil penjumlahan :" + hasil);
-            }
-        });
 
 
 
