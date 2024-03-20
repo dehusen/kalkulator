@@ -21,14 +21,9 @@ public class MainActivity extends AppCompatActivity {
         final TextView txtHasil = findViewById(R.id.hasilhitung);
 
 
-
-
         Button btnTambah = findViewById(R.id.btnTambah);
         Button btnBagi = findViewById(R.id.btnBagi);
         Button btnKali = findViewById(R.id.btnKali);
-
-
-
 
 
         btnTambah.setOnClickListener(new View.OnClickListener() {
@@ -53,10 +48,10 @@ public class MainActivity extends AppCompatActivity {
 
                 // Tampilkan hasil di TextView
                 txtHasil.setText("Hasil Pembagian: " + hasil);
+
+
             }
         });
-
-
 
 
     }
