@@ -22,8 +22,20 @@ public class MainActivity extends AppCompatActivity {
 
 
         Button btnTambah = findViewById(R.id.btnTambah);
-        Button btnBagi = findViewById(R.id.btnBagi);
+        Button btnBagi = findViewById(R.id.btnClear);
         Button btnKali = findViewById(R.id.btnKali);
+        Button btnClear = findViewById(R.id.btnClear);
+
+        btnClear.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                edtAngkaPertama.setText("");
+                edtAngkaKedua.setText("");
+                txtHasil.setText("");
+
+            }
+        });
 
 
         btnTambah.setOnClickListener(new View.OnClickListener() {
